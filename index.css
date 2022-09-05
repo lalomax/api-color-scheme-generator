@@ -1,0 +1,35 @@
+body {
+  background-color: #1F2937;
+  margin: 0;
+  padding: 0;
+}
+header, main, section, .color-hex {
+  display: flex;
+  justify-content: center;
+  padding: 5px;
+  font-size: .8em;
+}
+
+header, section {
+  color: white;
+}
+
+.hex-string {
+  width: 10vw;
+  text-align: center;
+}
+
+.color-scheme {
+  width: 10vw;
+  height: 40vh;
+}
+
+input, select, button {
+  color: white;
+  background-color: #1F2937;
+  
+}
+
+input:hover, select:hover, button:hover {
+  opacity: .5;
+}

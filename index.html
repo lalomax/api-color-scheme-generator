@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./index.css" />
+    <script src="./index.js" defer></script>
+    <title>Color scheme generator</title>
+  </head>
+  <body>
+    <header>
+      <input id="favcolor" type="color" value="#F55A5A" />
+      <select id="mode-color">
+        <option value="monochrome">monochrome</option>
+        <option value="monochrome-dark">monochrome-dark</option>
+        <option value="monochrome-light">monochrome-light</option>
+        <option value="analogic">analogic</option>
+        <option value="complement">complement</option>
+        <option value="analogic-complement">analogic-complement</option>
+        <option value="triad">triad</option>
+        <option value="quad">quad</option>
+      </select>
+      <button id="btn-getschemecolor">Get color scheme</button>
+    </header>
+
+    <main>
+      <div class="color-scheme" onclick="selfCopy(this.style.backgroundColor)"></div>
+      <div class="color-scheme" onclick="selfCopy(this.style.backgroundColor)"></div>
+      <div class="color-scheme" onclick="selfCopy(this.style.backgroundColor)"></div>
+      <div class="color-scheme" onclick="selfCopy(this.style.backgroundColor)"></div>
+      <div class="color-scheme" onclick="selfCopy(this.style.backgroundColor)"></div>
+    </main>
+
+    <section>
+      <div class="hex-string" onclick="selfCopy(this.textContent)"></div>
+      <div class="hex-string" onclick="selfCopy(this.textContent)"></div>
+      <div class="hex-string" onclick="selfCopy(this.textContent)"></div>
+      <div class="hex-string" onclick="selfCopy(this.textContent)"></div>
+      <div class="hex-string" onclick="selfCopy(this.textContent)"></div>
+    </section>
+  </body>
+</html>
